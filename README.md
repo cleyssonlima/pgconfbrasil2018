@@ -8,6 +8,10 @@ https://github.com/EnterpriseDB/mysql_fdw
 
 https://github.com/EnterpriseDB/mongo_fdw
 
+### INSTALL redis_fdw ###
+
+https://github.com/pg-redis-fdw/redis_fdw
+
 ### IMPORT DATA employees IN MySQL ###
 
 https://github.com/datacharmer/test_db
