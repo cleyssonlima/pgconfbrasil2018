@@ -1,6 +1,4 @@
 # Scripts presented in PGConfBrasil.2018 #
-=============================================
-
 
 ### INSTALL mysql_fdw ###
 
@@ -15,7 +13,7 @@ https://github.com/EnterpriseDB/mongo_fdw
 https://github.com/datacharmer/test_db
 
 ### IN PostgreSQL ###
-
+```
 CREATE DATABASE employees;
 
 \c employees;
@@ -67,26 +65,27 @@ CREATE SERVER redis_server
 CREATE USER MAPPING FOR PUBLIC
      SERVER redis_server
      OPTIONS (password 'secret');
-	 
-### IN MySQL AND PostgreSQL ###
+```
 
+### IN MySQL AND PostgreSQL ###
+```
 SELECT DISTINCT employees.emp_no,
                 employees.first_name,
                 employees.last_name
 FROM employees
 INNER JOIN salaries ON salaries.emp_no = employees.emp_no
 ORDER BY 1 LIMIT 10;
-
+```
 ### IN MySQL ###
-
+```
 SELECT DISTINCT employees.emp_no,
                 CONCAT (employees.first_name, ' ', employees.last_name) AS fullname
 FROM employees
 INNER JOIN salaries ON salaries.emp_no = employees.emp_no
 LIMIT 10;
-
+```
 ### IN PostgreSQL ###
-
+```
 SELECT DISTINCT emp.emp_no,
                 emp.first_name || ' ' || emp.last_name AS fullname
 FROM employees AS emp
@@ -106,9 +105,9 @@ INNER JOIN salaries sal ON sal.emp_no = emp.emp_no
 ORDER BY 1 LIMIT 5;
 
 SELECT * FROM red_employee WHERE key = '10003';
-
+```
 ### IN REDIS ###
-
+```
 MGET 10001 10002 10003 10004 10005
-
+```
 
