@@ -113,4 +113,4 @@ MGET 10001 10002 10003 10004 10005
 
 ### Download the slide presented ###
 
-[![Wiki PostgreSQL.org] (https://wiki.postgresql.org/images/f/f9/PostgreSQL_e_FDW.pdf)
+- [Wiki PostgreSQL.org](https://wiki.postgresql.org/images/f/f9/PostgreSQL_e_FDW.pdf)
